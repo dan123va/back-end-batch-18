@@ -17,4 +17,10 @@ router.get("/user", async (req, res) => {
   res.send(response);
 });
 
+router.post('/userValidation', async (req, res) => {
+  const { body, db } = req;
+  // const response = await userValidation(body, db);
+  res.send(response);
+});
+
 module.exports = router;

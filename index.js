@@ -29,7 +29,7 @@ app.use(dbMiddleware);
 app.use(auth);
 app.use(users);
 
-
+require("dotenv").config({ path: __dirname + "/.env" });
 app.listen(PORT, () => {
   console.log(`Servidor listening on port ${PORT}`);
 });

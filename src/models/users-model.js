@@ -16,7 +16,8 @@ const users = (sequelize, Sequelize) => {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      full_name: {
+      fullName: {
+        field: "full_name",
         type: Sequelize.STRING,
         allowNull: true,
       },
